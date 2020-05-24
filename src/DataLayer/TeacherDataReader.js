@@ -43,6 +43,6 @@ module.exports = class TeacherDataReader {
 
     // WARNING: THIS WILL OVERRIDE ANY DATA CURRENTLY IN THE "Teachers.json" FILE
     generateRandomTeachers() {
-        this.writeArrayToFile(Teacher.generateRandomPeople(10));
+        this.writeArrayToFile(Teacher.generateRandomPeople(3));//was 10
     }
 }

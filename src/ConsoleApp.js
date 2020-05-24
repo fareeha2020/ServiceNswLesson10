@@ -26,7 +26,7 @@ async function Program() {
    const _studentDataReader=new StudentDataReader(path.join(baseFilePath,"Students.json"));
    const _teacherDataReader=new TeacherDataReader(path.join(baseFilePath,"Teachers.json"));
    //console.log(_studentDataReader.getArrayFromFile());
-   const _teacherDataReader = new TeacherDataReader(path.join(baseFilePath, "Teachers.json"));
+   //const _teacherDataReader = new TeacherDataReader(path.join(baseFilePath, "Teachers.json"));
    const _studentService = new StudentService(_studentDataReader, _teacherDataReader);
 
    // console.log(_studentDataReader.getArrayFromFile());

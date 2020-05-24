@@ -14,6 +14,7 @@ if (!fs.existsSync(baseFilePath)) {
 let _studentDataSet = new StudentDataReader(path.join(baseFilePath, "Students.json"));
 let _teacherDataSet = new TeacherDataReader(path.join(baseFilePath, "Teachers.json"));
 
-_teacherDataSet.generateRandomTeachers();
+_teacherDataSet.generateRandomTeachers();//generates Random teachers same as person
+
 let teacherIds = _teacherDataSet.getArrayFromFile().map(teacher => teacher.id);
-_studentDataSet.generateRandomStudents(teacherIds);
+_studentDataSet.generateRandomStudents(teacherIds);//generates students Id of havind  teacher ids's

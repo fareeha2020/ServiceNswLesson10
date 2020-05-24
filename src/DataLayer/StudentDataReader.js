@@ -44,7 +44,7 @@ module.exports = class StudentDataReader {
     }
 
     // WARNING: THIS WILL OVERRIDE ANY DATA CURRENTLY IN THE "Students.json" FILE
-    generateRandomStudents(teacherIds) {
-        this.writeArrayToFile(Student.generateRandomPeople(100, teacherIds));
+    generateRandomStudents(teacherIds) {//?generate of students if teacher ID
+        this.writeArrayToFile(Student.generateRandomPeople(5, teacherIds));//was 100 now 10,genrates 10 random students 
     }
 }

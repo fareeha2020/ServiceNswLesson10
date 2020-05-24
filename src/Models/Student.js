@@ -13,6 +13,10 @@ class Student extends Person {
         return teachers.find(teacher => teacher.id == this.teacherId);
     }
 
+    //10 and valid Id here is teacher ID bue asl what is hapening in validIds[]
+    //fn,ln,age,ID,teacherId,grades
+    //if teacher Id's generated  are 3 in number
+
     static generateRandomPeople(num, validIds) {
         return super.generateRandomPeople(num).map(person => new Student(
             person.firstName,
